@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>React Hello World</title>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script>
+            // test program 
+            // changed hw1. 
+            // change 3
+
+            const e = React.createElement;
+
+            function App() {
+                return e('h1', null, 'Hello, world!');
+            }
+
+            const root = ReactDOM.createRoot(document.getElementById('root'));
+            root.render(e(App));
+        </script>
+    </body>
+</html>
